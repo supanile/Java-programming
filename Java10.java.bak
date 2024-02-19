@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;  //
+ public class Java10 {
+ public static void main(String cmd$[]) {
+	 String input = JOptionPane.showInputDialog("Insert a string");
+	 int halfLength = input.length()   /2;
+
+	 String firstHalf = input.substring(0,halfLength);
+	 String secondHalf = input.substring(halfLength,input.length());
+
+	 String x = firstHalf.toUpperCase();
+	 String y = secondHalf.toLowerCase();
+
+	 System.out.println(x+y);
+
+	 System.exit(0);
+ }
+}

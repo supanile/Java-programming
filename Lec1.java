@@ -1,0 +1,9 @@
+class Lec1 {
+	public static void main(String[] args){
+		byte i;
+		i=-125;  System.out.println("i1="+i);
+		i=(byte)(i-2);	System.out.println("i2="+i);
+		i=(byte)(i-1);	System.out.println("i3="+i);
+		i=(byte)(i-1);	System.out.println("i4="+i);
+	}
+}

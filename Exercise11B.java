@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Exercise11B{
+	public static void main(String[] args){
+		int n = 4;
+		long[] x = new long[50];
+		int i;
+		Scanner kbd = new Scanner(System.in);
+		System.out.print("Enter a : ");
+		int a = kbd.nextInt();
+		System.out.print("Enter b : ");
+		int b = kbd.nextInt();
+		x[0] = a; x[1] = b;
+		for(i=2;i<50;i++){
+		x[i] = x[i-1] + x[i-2];
+	}
+		disArray(x,n);
+	}
+	public static void disArray(long[]x , int n){
+		int k = 0;
+		for(int i=0;i<50;i++){
+			System.out.printf("%15d",x[i]);
+			k = k+1;
+		if(k==n){
+			System.out.println();
+			k = 0;
+		}
+		}
+		System.out.println();
+	}
+}//Supawit Saengrattanayon 64050604
+
+

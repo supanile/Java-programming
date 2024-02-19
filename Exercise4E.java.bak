@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class Exercise4E {
+	public static void main(String[] args) {
+		double x,y;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter x = ");
+		x = sc.nextDouble();
+		y = (int)(3/2*(x*x)+3d/6*x+1);
+	}//Supawit Saengrattanayon 64050694
+}

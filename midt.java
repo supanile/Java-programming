@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class midt{
+	public static double readDouble(String txt) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print(txt);
+		double income = sc.nextDouble();
+		return income;
+	}
+	public static double taxRate(double income){
+		double tax;
+		if(income >= 1000000){
+			tax = 15.0;
+		}
+		else if(income < 1000000 && income >= 500000){
+			tax = 10.0;
+		}
+		else if(income < 500000 && income >= 100000){
+			tax = 5.0;
+		}
+		else{
+			tax = 0.0;
+		}
+			return tax;
+	}
+	public static void main(String[] args){
+		double income = readDouble("Enter Income : ");
+		double tax = taxRate(income);
+		System.out.println("Income : " + income);
+		System.out.println("Tax : " + tax);
+	}
+}
+

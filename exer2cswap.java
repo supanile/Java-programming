@@ -1,0 +1,13 @@
+class exer2cswap {
+ 	public static void main(String[] args) { 
+ 		int x , y, r;
+		x = 5; y = 12;
+		System.out.print( "x..:"+x +"\t" ); 
+ 		System.out.println( " y..:"+y+"\n" );
+ 		r = x; x = y; y = r;
+ 		System.out.print( "x..:"+x +"\t" ); 
+ 		System.out.println( " y..:"+y+"\n" );
+
+    //Supawit Saengrattanayon 64050694
+   }
+}

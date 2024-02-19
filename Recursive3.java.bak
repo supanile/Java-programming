@@ -1,0 +1,16 @@
+class Recursive3 {
+	public static void main(String[] args) {
+		System.out.println("sum(13,17) is "+sum(13,17));
+		System.out.println("product(13,17) is "+product(13,17));
+
+	}
+	public static int sum(int x,int y){
+	if(y==0)	return x;
+	else		return 1+sum(x,y-1);
+
+	}
+	public static int product(int a,int b){
+	if(b==0)	return 0;
+	else		return sum(a,product(a,b-1));
+	}
+}

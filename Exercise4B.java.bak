@@ -1,0 +1,11 @@
+class Exercise4B {
+	public static void main(String[] args) {
+		float f = 10/2.0f;
+		System.out.println(f/0);
+		System.out.println(-f/0);
+		System.out.println((f-500)/(f-g));
+		System.out.println(-(f-500)/(f-g));
+
+		//Supawit Saengrattnayon 64050694
+	}
+}

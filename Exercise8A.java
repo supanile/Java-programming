@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Exercise8A{
+	public static int InputInt(String msg){
+		Scanner sc = new Scanner(System.in);
+		System.out.print(msg);
+		int num = sc.nextInt();
+		return num;
+	}
+	public static void compute(int x, int n){
+		int res = 1;
+		int i = 1;
+		while (i <= n){
+			res = res * x;
+			i = i+1;
+		}
+		System.out.println("result is : " + res);
+	}
+	public static void main(String[] args){
+		int x,n;
+		x = InputInt("Enter x: ");
+		n = InputInt("Enter n: ");
+		compute(x,n);
+	}
+}//Supawit Saengrattanayon 64050694

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Exercise10A {
+	public static void triBox(int n){
+		int i, j;
+		int max = 1;
+		for (i=1; i <= n ; i++){
+			for (j=1; j <= n; j++){
+				System.out.print("*");
+			}
+			System.out.println();
+			max += 1;
+		}
+	}
+	public static void main(String[] args){
+		int n;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter n: ");
+		n = sc.nextInt();
+		triBox(n);
+		System.out.print("*");
+
+	}
+}//Supawit Saengrattanayon 64050694

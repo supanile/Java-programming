@@ -1,0 +1,11 @@
+class SumSqure {
+	public static int SumSqure(int n) {
+		int S = 0;
+		int i = 1;
+		while(i<=n){
+			S = S + (i*i);
+			i = i + 1;
+		}
+		return S;
+	}
+}
